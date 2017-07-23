@@ -14,6 +14,8 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: center;
+    padding-top: 15px;
 }
 
 #services{
@@ -24,6 +26,9 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
 }
 
 .navbar-default.affix {
@@ -52,13 +57,13 @@ header {
 }
 .h1, .h2, h1, h2 {
     margin-top: 100px;
-    margin-bottom: 100px;
-    color: #fff;
+    margin-bottom: 40px;
+    color: black;
 }
 
 h3{
 	margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #imgservices{
@@ -68,21 +73,55 @@ h3{
 #findpro{
 	padding-top: 20px;
 	font-size: 20px;
-	color: #fff;
+	color: black;
 }
-
+.icon{
+  font-size: 2.4em;
+  color: #4CAF50;
+}
+.info-title{
+  font-size: 25px;
+  color: #FF9800;
+}
+.form{
+  width: 400px;
+}
+.card-panel{
+  width: 450px;
+  background: rgba(158, 158, 158, 0.16);
+  border-radius: 10px;
+  padding: 25px;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: 350px;
+    padding-top: 0px;
+}
+.card-signup .header {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px 0;
+    background: #FF9800;
+}
 
 header {
   position: relative;
   width: 100%;
-  min-height: 650px;
+  min-height: 649px;
   overflow-y: hidden;
-   background-image: url("images/bg-pattern.png");
-  background: #7b4397;
+   background-image: url("images/exteriorexact.jpeg");
+  /*background: #7b4397;*/
   /* fallback for old browsers */
-  background: url("images/bg-pattern.png"), -webkit-linear-gradient(to left, #ffd740, #ef6c00);
+  /*background: url("images/bg-pattern.png"), -webkit-linear-gradient(to left, #ffd740, #ef6c00);*/
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("images/bg-pattern.png"), linear-gradient(to left, #ffd740  , #ef6c00 );
+  /*background: url("images/bg-pattern.png"), linear-gradient(to left, #833ab4 , #fd1d1d , #fcb045);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
  
@@ -98,12 +137,12 @@ header .device-container {
 }
 header .device-container .screen img {
   border-radius: 3px;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
-    max-width: 1025px;
-    height: 682px;
+    /*max-width: 1025px;*/
+    height: 600px;
 }
 
 section.download {
@@ -158,7 +197,7 @@ section.jointeam h2 {
 .carousel {
     position: relative;
     margin: 0 auto;
-    width: 76%;
+    width: 100%;
     height: 600px;
 }
 
@@ -204,10 +243,10 @@ section.contact ul.list-social li.social-facebook a {
 section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
 }
-section.contact ul.list-social li.social-google-plus a {
+section.contact ul.list-social li.social-instagram a {
   background-color: #dd4b39;
 }
-section.contact ul.list-social li.social-google-plus a:hover {
+section.contact ul.list-social li.social-instagram a:hover {
   background-color: #d73925;
 }
 footer {
@@ -258,7 +297,7 @@ footer ul li a.active {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-radius: 300px;
+  border-radius: 10px;
 }
 .btn-xl {
   padding: 15px 45px;
@@ -281,5 +320,100 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent;
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  /* some CSS here */
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  /* some CSS here */
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  /* some CSS here */
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-width: 375px){
+  /* some CSS here */
+/*.navbar-default .nav > li > a {
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.navbar-default .navbar-brand {
+    color: black;
+}
+.h1, .h2, h1, h2 {
+    margin-top: 150px;
+    margin-bottom: 40px;
+    color: black;
+}
+#findpro {
+    padding-top: 20px;
+    font-size: 25px;
+    color: black;
+    margin-left: 400px;
+    margin-top: -300px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    float: left;
+    height: 60px;
+    padding: 15px 15px;
+    font-size: 81px;
+    line-height: 20px;
+}
+p {
+    font-size: 33px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 0px;
+}
+section.download {
+    padding: 100px 0;
+    position: relative;
+}
+section.jointeam {
+    padding: 100px 0;
+    position: relative;
+    background-color: #337B18;
+}
+.card-panel {
+    width: 450px;
+    background: rgba(158, 158, 158, 0.16);
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: -210px;
+}*/
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  /* some CSS here */
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+  /* some CSS here */
 }
 
